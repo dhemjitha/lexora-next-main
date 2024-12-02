@@ -21,16 +21,16 @@ const Navigation = () => {
                     </Link>
 
                     <nav className="hidden md:flex items-center space-x-11 text-sm font-semibold">
-                        <Link href="/" className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">
+                        <Link href="/" className=" dark:text-gray-400  dark:hover:text-white">
                             Home
                         </Link>
-                        <Link href="/career" className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">
+                        <Link href="/career" className=" dark:text-gray-400  dark:hover:text-white">
                             Career
                         </Link>
-                        <Link href="/services" className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">
+                        <Link href="/services" className=" dark:text-gray-400  dark:hover:text-white">
                             Services
                         </Link>
-                        <Link href="/about" className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">
+                        <Link href="/about" className=" dark:text-gray-400  dark:hover:text-white">
                             About Us
                         </Link>
                     </nav>
@@ -85,28 +85,28 @@ const Navigation = () => {
                     <nav className="flex flex-col items-center space-y-6 text-white text-2xl font-semibold">
                         <Link
                             href="/"
-                            className="hover:text-gray-400"
+                            className="dark:text-gray-400  dark:hover:text-white"
                             onClick={toggleMenu}
                         >
                             Home
                         </Link>
                         <Link
                             href="/career"
-                            className="hover:text-gray-400"
+                            className="dark:text-gray-300  dark:hover:text-white"
                             onClick={toggleMenu}
                         >
                             Career
                         </Link>
                         <Link
                             href="/services"
-                            className="hover:text-gray-400"
+                            className="dark:text-gray-300  dark:hover:text-white"
                             onClick={toggleMenu}
                         >
                             Services
                         </Link>
                         <Link
                             href="/about"
-                            className="hover:text-gray-400"
+                            className="dark:text-gray-300  dark:hover:text-white"
                             onClick={toggleMenu}
                         >
                             About Us
