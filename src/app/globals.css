@@ -74,3 +74,26 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* Tailwind Custom Animation for Marquee */
+/* Smooth scrolling marquee */
+.marquee-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* Adjust gap for smooth look */
+}
+
+@keyframes scroll-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Slide halfway to create seamless loop */
+  }
+}
+
+.group .marquee-container {
+  animation: scroll-marquee 20s linear infinite;
+  white-space: nowrap;
+}
+
