@@ -13,8 +13,10 @@ function TechnologyMarquee() {
   ];
 
   return (
-    <>
-    
+    <div className="h-f h-[300px]">
+    <p className="text-sm text-center font-semibold text-gray-400">
+    Pioneering the Future with Cutting-Edge Technologies.
+        </p>
     <div className="group flex overflow-hidden p-4 gap-4 flex-row relative">
       <div
         className="flex flex-row gap-8 marquee-container"
@@ -40,7 +42,7 @@ function TechnologyMarquee() {
       <div className="absolute top-0 left-0 w-1/4 h-full bg-gradient-to-r from-black to-transparent pointer-events-none"></div>
       <div className="absolute top-0 right-0 w-1/4 h-full bg-gradient-to-l from-black to-transparent pointer-events-none"></div>
     </div>
-    </>
+    </div>
   );
 }
 
