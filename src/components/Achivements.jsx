@@ -12,10 +12,10 @@ const Achievements = () => {
 
   const counters = useRef([]);
 
-  // Smoother number animation (with symbols included)
+
   const smoothCountUp = (target, index) => {
     let startValue = 0;
-    const endValue = parseFloat(target.replace(/\D/g, "")); // Remove non-numeric characters to calculate the number
+    const endValue = parseFloat(target.replace(/\D/g, "")); 
     const duration = 1500; // 1.5 seconds
     const startTime = performance.now();
 
@@ -24,7 +24,7 @@ const Achievements = () => {
       const progress = Math.min(timeElapsed / duration, 1);
       const currentValue = startValue + (endValue - startValue) * progress;
 
-      // Combine the numeric part with the original value's suffix
+
       counters.current[index].innerText = currentValue.toFixed(0) + target.replace(/\d/g, ""); 
 
       if (progress < 1) {
