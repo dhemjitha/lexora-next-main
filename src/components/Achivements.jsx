@@ -11,7 +11,7 @@ const Achievements = () => {
   ];
 
   return (
-    <div className="relative text-white min-h-screen bg-secondary/50 rounded-3xl mx-4 md:mx-auto lg:mx-8 px-8 py-48 lg:max-w-7xl max-w-2xl">
+    <div className="relative text-white bg-secondary/50 rounded-3xl m-7 px-8 py-48">
       <div className="text-center mb-12">
         <p className="text-sm uppercase text-gray-400">Explore Our Milestones</p>
         <h2 className="text-3xl lg:text-4xl font-bold mt-2">
