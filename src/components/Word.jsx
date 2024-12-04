@@ -26,7 +26,7 @@ export default function ScrollAnimatedText() {
               // Set unique scroll progress ranges for each word
               const start = i / text.length;
               const end = start + 1 / text.length;
-              const opacity = useTransform(scrollYProgress, [start, end], [0.1, 1]);
+              const opacity = useTransform(scrollYProgress, [start, end], [0.2, 1]);
 
               return (
                 <motion.span

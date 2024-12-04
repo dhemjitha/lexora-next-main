@@ -3,13 +3,15 @@
 import React from 'react';
 import { Badge } from "@/components/ui/badge";
 import { Button } from './ui/button';
+import { Separator } from './ui/separator';
 
 const FeatureShowcase = () => {
   const tags = ['Innovation', 'Global Impact', 'Tech-Driven', 'Efficiency', 'Sustainability'];
 
   return (
     <div className=" text-white py-16 px-8">
-
+        <Separator/>
+        <br /><br />
       <div className="text-center mb-12">
         <h1 className="text-4xl lg:text-5xl font-bold">
           Achieve More, Together{' '}
@@ -38,6 +40,8 @@ const FeatureShowcase = () => {
       <div className="text-center mt-12">
         <Button>Join Our Journey →</Button>
       </div>
+        <br /><br />
+      <Separator/>
     </div>
   );
 };
