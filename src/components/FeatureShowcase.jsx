@@ -9,6 +9,7 @@ const FeatureShowcase = () => {
   const tags = ['Innovation', 'Global Impact', 'Tech-Driven', 'Efficiency', 'Sustainability'];
 
   return (
+    <div className="flex items-center justify-center">
     <div className=" text-white py-16 px-8">
         <Separator/>
         <br /><br />
@@ -42,6 +43,7 @@ const FeatureShowcase = () => {
       </div>
         <br /><br />
       <Separator/>
+    </div>
     </div>
   );
 };

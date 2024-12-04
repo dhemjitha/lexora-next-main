@@ -97,10 +97,3 @@ html {
   white-space: nowrap;
 }
 
-.accordion-trigger {
-  color: black !important; /* Ensure text is visible */
-  font-size: 1rem;         /* Adjust size */
-  line-height: 1.5;        /* Ensure proper spacing */
-  padding: 8px 16px;       /* Add padding */
-}
-
