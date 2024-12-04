@@ -1,4 +1,5 @@
 import Achievements from "@/components/Achivements";
+import FAQS from "@/components/Faq";
 import FeatureShowcase from "@/components/FeatureShowcase";
 import Hero from "@/components/Hero";
 import TechnologyMarquee from "@/components/TechnologyMarquee";
@@ -12,6 +13,7 @@ export default function Home() {
       <Achievements/>
       <ScrollAnimatedText/>
       <FeatureShowcase/>
+      <FAQS/>
     </main>
   );
 }
