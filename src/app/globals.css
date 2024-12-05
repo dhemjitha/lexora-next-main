@@ -97,3 +97,14 @@ html {
   white-space: nowrap;
 }
 
+.MyGradient {
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 10%,
+    rgba(0, 0, 0, 0.5) 25%,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 0.5) 75%,
+    rgba(0, 0, 0, 0) 90%
+  );
+}
+
