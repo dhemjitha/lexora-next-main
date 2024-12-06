@@ -21,16 +21,16 @@ const Navigation = () => {
                     </Link>
 
                     <nav className="hidden md:flex items-center space-x-11 text-sm font-semibold">
-                        <Link href="/" className=" dark:text-gray-400  dark:hover:text-white">
+                        <Link href="/" className=" dark:text-gray-300  dark:hover:text-white">
                             Home
                         </Link>
-                        <Link href="/career" className=" dark:text-gray-400  dark:hover:text-white">
+                        <Link href="/career" className=" dark:text-gray-300  dark:hover:text-white">
                             Career
                         </Link>
-                        <Link href="#services" className=" dark:text-gray-400  dark:hover:text-white">
+                        <Link href="#services" className=" dark:text-gray-300  dark:hover:text-white">
                             Services
                         </Link>
-                        <Link href="/about" className=" dark:text-gray-400  dark:hover:text-white">
+                        <Link href="/about" className=" dark:text-gray-300  dark:hover:text-white">
                             About Us
                         </Link>
                     </nav>
@@ -84,7 +84,7 @@ const Navigation = () => {
                     <nav className="flex flex-col items-center space-y-6 text-white text-2xl font-semibold">
                         <Link
                             href="#home"
-                            className="dark:text-gray-400 dark:hover:text-white"
+                            className="dark:text-gray-300 dark:hover:text-white"
                             onClick={toggleMenu}
                         >
                             Home
@@ -112,7 +112,7 @@ const Navigation = () => {
                         </Link>
                     </nav>
                     <button
-                        className="absolute top-6 right-6 text-gray-400"
+                        className="absolute top-6 right-6 text-gray-300"
                         onClick={toggleMenu}
                     >
                         <svg
