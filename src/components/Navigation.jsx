@@ -27,7 +27,7 @@ const Navigation = () => {
                         <Link href="/career" className=" dark:text-gray-400  dark:hover:text-white">
                             Career
                         </Link>
-                        <Link href="/services" className=" dark:text-gray-400  dark:hover:text-white">
+                        <Link href="#services" className=" dark:text-gray-400  dark:hover:text-white">
                             Services
                         </Link>
                         <Link href="/about" className=" dark:text-gray-400  dark:hover:text-white">
@@ -41,7 +41,6 @@ const Navigation = () => {
                             className="md:hidden text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white focus:outline-none focus:ring-0 focus:ring-gray-600 dark:focus:ring-gray-300"
                             onClick={toggleMenu}
                         >
-                            {/* Toggle button icon changes based on menu state */}
                             {isMenuOpen ? (
                                 <svg
                                     className="w-6 h-6"
@@ -84,29 +83,29 @@ const Navigation = () => {
                 <div className="fixed inset-0 bg-black bg-opacity-80 backdrop-blur-lg z-50 flex justify-center items-center">
                     <nav className="flex flex-col items-center space-y-6 text-white text-2xl font-semibold">
                         <Link
-                            href="/"
-                            className="dark:text-gray-400  dark:hover:text-white"
+                            href="#home"
+                            className="dark:text-gray-400 dark:hover:text-white"
                             onClick={toggleMenu}
                         >
                             Home
                         </Link>
                         <Link
-                            href="/career"
-                            className="dark:text-gray-300  dark:hover:text-white"
+                            href="#career"
+                            className="dark:text-gray-300 dark:hover:text-white"
                             onClick={toggleMenu}
                         >
                             Career
                         </Link>
                         <Link
-                            href="/services"
-                            className="dark:text-gray-300  dark:hover:text-white"
+                            href="#services"
+                            className="dark:text-gray-300 dark:hover:text-white"
                             onClick={toggleMenu}
                         >
                             Services
                         </Link>
                         <Link
-                            href="/about"
-                            className="dark:text-gray-300  dark:hover:text-white"
+                            href="#about"
+                            className="dark:text-gray-300 dark:hover:text-white"
                             onClick={toggleMenu}
                         >
                             About Us
@@ -116,7 +115,6 @@ const Navigation = () => {
                         className="absolute top-6 right-6 text-gray-400"
                         onClick={toggleMenu}
                     >
-                        {/* Close button */}
                         <svg
                             className="w-8 h-8"
                             fill="none"
