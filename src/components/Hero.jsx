@@ -9,7 +9,10 @@ function Hero() {
           Boosting Business Growth with Smart Technology.
         </p>
         <p className="text-lg md:text-xl lg:text-2xl text-gray-400 max-w-3xl mx-auto px-2 container">
-          We provide the best solutions for you. Tailored technologies designed to help your business grow.
+          We provide the best solutions for you.
+        </p>
+        <p className="text-lg md:text-xl lg:text-2xl text-gray-400 max-w-3xl mx-auto px-2 container">
+          Tailored technologies designed to help your business grow.
         </p><br />
         <div className="space-x-3">
         <Button className="font-medium">Get Started</Button>
