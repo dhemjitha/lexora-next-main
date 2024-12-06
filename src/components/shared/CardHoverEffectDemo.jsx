@@ -14,7 +14,7 @@ export function CardHoverEffectDemo() {
 export const projects = [
   {
     icon: (
-      <div className="bg-blue-100 p-4 rounded-full">
+      <div className="bg-blue-50 p-4 rounded-full">
         <PiCode className="w-8 h-8 text-blue-600" />
       </div>
     ),
@@ -24,7 +24,7 @@ export const projects = [
   },
   {
     icon: (
-      <div className="bg-blue-100 p-4 rounded-full">
+      <div className="bg-blue-50 p-4 rounded-full">
         <FaMobile className="w-8 h-8 text-blue-600" />
       </div>
     ),
@@ -34,7 +34,7 @@ export const projects = [
   },
   {
     icon: (
-      <div className="bg-blue-100 p-4 rounded-full">
+      <div className="bg-blue-50 p-4 rounded-full">
         <PiCloud className="w-8 h-8 text-blue-600" />
       </div>
     ),
@@ -44,7 +44,7 @@ export const projects = [
   },
   {
     icon: (
-      <div className="bg-blue-100 p-4 rounded-full">
+      <div className="bg-blue-50 p-4 rounded-full">
         <PiShieldCheck className="w-8 h-8 text-blue-600" />
       </div>
     ),
@@ -54,7 +54,7 @@ export const projects = [
   },
   {
     icon: (
-      <div className="bg-blue-100 p-4 rounded-full">
+      <div className="bg-blue-50 p-4 rounded-full">
         <PiChartBar className="w-8 h-8 text-blue-600" />
       </div>
     ),
@@ -64,7 +64,7 @@ export const projects = [
   },
   {
     icon: (
-      <div className="bg-blue-100 p-4 rounded-full">
+      <div className="bg-blue-50 p-4 rounded-full">
         <AiFillRobot className="w-8 h-8 text-blue-600" />
       </div>
     ),
