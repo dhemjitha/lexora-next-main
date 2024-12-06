@@ -5,7 +5,7 @@ import { CardHoverEffectDemo } from "./shared/CardHoverEffectDemo";
 const Services = () => {
   return (
     <section id="services">
-        <div className="flex items-center justify-center">
+        <div className="mx-auto max-w-screen-2xl ">
         <div className="max-w-full mx-7 py-20 bg-secondary/50 rounded-3xl">
       <div
         className="text-4xl pb-5 md:text-7xl text-center

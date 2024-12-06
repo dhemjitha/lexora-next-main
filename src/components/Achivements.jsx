@@ -43,7 +43,7 @@ const Achievements = () => {
   }, []);
 
   return (
-    <div className="flex items-center justify-center">
+    <div className="mx-auto max-w-screen-2xl ">
       <div className="relative text-white bg-secondary/50 rounded-3xl m-7 px-8 py-48">
         <div className="text-center mb-12">
           <p className="text-sm uppercase text-gray-400">Explore Our Milestones</p>
