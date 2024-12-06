@@ -13,7 +13,7 @@ function TechnologyMarquee() {
   ];
 
   return (
-    <div className="h-f h-[300px]">
+    <div className="container mx-auto h-f h-[300px] text-white justify-center items-center overflow-x-hidden">
     <p className="text-sm text-center font-semibold text-gray-400">
     Pioneering the Future with Cutting-Edge Technologies.
         </p>
