@@ -17,13 +17,13 @@ function Hero() {
       style={{ height: "115vh" }}
     >
       <div>
-        <p className="text-4xl md:text-5xl lg:text-8xl font-bold text-gray-300 mb-4 container">
+        <p className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-300 mb-4 container">
           Boosting Business Growth with Smart Technology.
+        </p><br />
+        <p className="text-base md:text-xl lg:text-1xl text-gray-400 max-w-3xl mx-auto px-2 container">
+          We provide the <strong className="text-white">best solutions</strong> for you.
         </p>
-        <p className="text-lg md:text-xl lg:text-2xl text-gray-400 max-w-3xl mx-auto px-2 container">
-          We provide the best solutions for you.
-        </p>
-        <p className="text-lg md:text-xl lg:text-2xl text-gray-400 max-w-3xl mx-auto px-2 container">
+        <p className="text-base md:text-xl lg:text-1xl text-gray-400 max-w-3xl mx-auto px-2 container">
           Tailored technologies designed to help your business grow.
         </p>
         <br />
