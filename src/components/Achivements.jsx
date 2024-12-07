@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import React, { useEffect, useRef } from "react";
 
@@ -12,10 +12,9 @@ const Achievements = () => {
 
   const counters = useRef([]);
 
-
   const smoothCountUp = (target, index) => {
     let startValue = 0;
-    const endValue = parseFloat(target.replace(/\D/g, "")); 
+    const endValue = parseFloat(target.replace(/\D/g, "")); // Remove non-digit characters
     const duration = 1500; // 1.5 seconds
     const startTime = performance.now();
 
@@ -24,8 +23,11 @@ const Achievements = () => {
       const progress = Math.min(timeElapsed / duration, 1);
       const currentValue = startValue + (endValue - startValue) * progress;
 
-
-      counters.current[index].innerText = currentValue.toFixed(0) + target.replace(/\d/g, ""); 
+      // Ensure the element is not null before updating
+      if (counters.current[index]) {
+        counters.current[index].innerText =
+          currentValue.toFixed(0) + target.replace(/\d/g, "");
+      }
 
       if (progress < 1) {
         requestAnimationFrame(update);
@@ -37,8 +39,10 @@ const Achievements = () => {
 
   useEffect(() => {
     counters.current.forEach((counter, index) => {
-      const stat = stats[index];
-      smoothCountUp(stat.value, index); // Animate with the full value including symbols
+      if (counter) {
+        const stat = stats[index];
+        smoothCountUp(stat.value, index); // Animate with the full value including symbols
+      }
     });
   }, []);
 
