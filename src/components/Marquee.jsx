@@ -1,7 +1,7 @@
 'use client'
 
 import React from "react";
-import MarqueeItem from "./MarqueeItem";
+import MarqueeItem from "./shared/MarqueeItem";
 
 const Marquee = () => {
   const upperMarquee = [
