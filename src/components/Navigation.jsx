@@ -27,7 +27,7 @@ const Navigation = () => {
                         <Link href="/career" className=" dark:text-gray-300  dark:hover:text-white">
                             Career
                         </Link>
-                        <Link href="#services" className=" dark:text-gray-300  dark:hover:text-white">
+                        <Link href="/#services" className=" dark:text-gray-300  dark:hover:text-white">
                             Services
                         </Link>
                         <Link href="/about" className=" dark:text-gray-300  dark:hover:text-white">
