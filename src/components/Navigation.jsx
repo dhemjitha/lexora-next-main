@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import React, { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -13,13 +13,15 @@ const Navigation = () => {
 
     return (
         <div className="dark bg-black text-white">
-            <header className="fixed top-0 left-0 w-full shadow-md z-50 backdrop-blur-lg bg-opacity-60">
+            <header className="fixed top-0 left-0 w-full shadow-md z-50 backdrop-blur-lg bg-opacity-60 border-b border-secondary">
                 <div className="container mx-auto px-6 py-3 flex items-center justify-between">
 
+                    {/* Logo */}
                     <Link href="/" className="text-2xl font-bold text-gray-800 dark:text-white">
                         Synolux
                     </Link>
 
+                    {/* Navigation Links */}
                     <nav className="hidden md:flex items-center space-x-11 text-sm font-semibold">
                         <Link href="/" className=" dark:text-gray-300  dark:hover:text-white">
                             Home
@@ -35,6 +37,7 @@ const Navigation = () => {
                         </Link>
                     </nav>
 
+                    {/* Button Section */}
                     <div className="flex items-center space-x-2">
                         <Button variant="outline" className="font-semibold">Let's talk</Button>
                         <button
@@ -83,28 +86,28 @@ const Navigation = () => {
                 <div className="fixed inset-0 bg-black bg-opacity-80 backdrop-blur-lg z-50 flex justify-center items-center">
                     <nav className="flex flex-col items-center space-y-6 text-white text-2xl font-semibold">
                         <Link
-                            href="#home"
+                            href="/"
                             className="dark:text-gray-300 dark:hover:text-white"
                             onClick={toggleMenu}
                         >
                             Home
                         </Link>
                         <Link
-                            href="#career"
+                            href="/career"
                             className="dark:text-gray-300 dark:hover:text-white"
                             onClick={toggleMenu}
                         >
                             Career
                         </Link>
                         <Link
-                            href="#services"
+                            href="/#services"
                             className="dark:text-gray-300 dark:hover:text-white"
                             onClick={toggleMenu}
                         >
                             Services
                         </Link>
                         <Link
-                            href="#about"
+                            href="/about"
                             className="dark:text-gray-300 dark:hover:text-white"
                             onClick={toggleMenu}
                         >
