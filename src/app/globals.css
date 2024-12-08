@@ -75,12 +75,11 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Tailwind Custom Animation for Marquee */
-/* Smooth scrolling marquee */
+
 .marquee-container {
   display: flex;
   align-items: center;
-  gap: 2rem; /* Adjust gap for smooth look */
+  gap: 2rem;
 }
 
 @keyframes scroll-marquee {
@@ -88,7 +87,7 @@ html {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%); /* Slide halfway to create seamless loop */
+    transform: translateX(-50%);
   }
 }
 
