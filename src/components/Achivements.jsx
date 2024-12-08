@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 
 const Achievements = () => {
   const stats = [
@@ -47,8 +48,26 @@ const Achievements = () => {
   }, []);
 
   return (
+    <motion.div
+      variants={{
+        hidden: {
+          opacity: 0,
+          y: -20,
+        },
+
+        visible: {
+          opacity: 1,
+          y: 0,
+        },
+      }}
+      initial="hidden"
+      whileInView="visible"
+      transition={{ duration: 0.8, delay: 0.4 }}
+      viewport={{ once: true }}
+      className="animate_top"
+    >
     <div className="mx-auto max-w-screen-2xl" id="achievements">
-      <div className="relative text-white bg-secondary/50 rounded-3xl m-7 px-8 py-48">
+      <div className="relative text-white bg-secondary/40 rounded-3xl m-7 px-8 py-48">
         <div className="text-center mb-12">
           <p className="text-sm uppercase text-gray-400">Explore Our Milestones</p>
           <h2 className="text-3xl lg:text-4xl font-bold mt-2">
@@ -74,6 +93,7 @@ const Achievements = () => {
         </div>
       </div>
     </div>
+    </motion.div>
   );
 };
 
