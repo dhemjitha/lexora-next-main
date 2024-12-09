@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Separator } from "./ui/separator";
+import Image from "next/image";
 
 const Navigation = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,9 +18,17 @@ const Navigation = () => {
                 <div className="container mx-auto px-6 py-3 flex items-center justify-between">
 
                     {/* Logo */}
-                    <Link href="/" className="text-2xl font-bold text-gray-800 dark:text-white">
-                        Synolux
-                    </Link>
+                    <a className="flex h-12 w-48 items-center rounded" href="/">
+                        <Image
+                            alt="SYNOLUX Logo"
+                            loading="lazy"
+                            width="1540"
+                            height="322"
+                            decoding="async"
+                            srcSet="/assets/logo/logo.png 1x, /assets/logo/logo@2x.png 2x"
+                            src="/assets/logo/logo.png"
+                            style="color: transparent;" />
+                    </a>
 
                     {/* Navigation Links */}
                     <nav className="hidden md:flex items-center space-x-11 text-sm font-semibold">
