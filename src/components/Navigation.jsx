@@ -18,7 +18,7 @@ const Navigation = () => {
                 <div className="container mx-auto px-6 py-3 flex items-center justify-between">
 
                     {/* Logo */}
-                    <a className="flex h-12 w-48 items-center rounded" href="/">
+                    <a className="flex h-12 w-36 items-center rounded" href="/">
                         <Image
                             alt="SYNOLUX Logo"
                             loading="lazy"
