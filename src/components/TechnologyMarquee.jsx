@@ -35,7 +35,7 @@ function TechnologyMarquee() {
       className="animate_top"
     >
       <div className="container mx-auto h-f h-[300px] text-white justify-center items-center overflow-x-hidden">
-        <p className="text-sm text-center font-semibold text-gray-400">
+        <p className="text-sm text-center font-semibold text-gray-400 px-4">
           Pioneering the Future with Cutting-Edge Technologies.
         </p>
         <div className="group flex overflow-hidden p-4 gap-4 flex-row relative">
