@@ -5,12 +5,14 @@ import { motion } from "framer-motion";
 
 function TechnologyMarquee() {
   const technologies = [
-    { imageUrl: "/assets/reactjs.webp", altText: "React" },
-    { imageUrl: "/assets/next.webp", altText: "Next.js" },
-    { imageUrl: "/assets/nodejs.webp", altText: "Node.js" },
-    { imageUrl: "/assets/python.webp", altText: "Python" },
-    { imageUrl: "/assets/mongodb.webp", altText: "MongoDB" },
-    { imageUrl: "/assets/flutter.webp", altText: "Flutter" },
+    { imageUrl: "/assets/techstack/react.png", altText: "React" },
+    { imageUrl: "/assets/techstack/next.png", altText: "Next.js" },
+    { imageUrl: "/assets/techstack/node.png", altText: "Node.js" },
+    { imageUrl: "/assets/techstack/python.png", altText: "Python" },
+    { imageUrl: "/assets/techstack/mongodb.png", altText: "MongoDB" },
+    { imageUrl: "/assets/techstack/flutter.png", altText: "Flutter" },
+    { imageUrl: "/assets/techstack/laravel.png", altText: "Laravel"},
+    { imageUrl: "/assets/techstack/firebase.png", altText: "Firebase"},
   ];
 
   return (
