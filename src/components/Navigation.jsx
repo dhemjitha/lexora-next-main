@@ -14,7 +14,7 @@ const Navigation = () => {
 
     return (
         <div className="dark bg-black text-white">
-            <header className="fixed top-0 left-0 w-full shadow-md z-50 backdrop-blur-lg bg-opacity-60 border-b border-secondary">
+            <header className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-secondary">
                 <div className="container mx-auto px-6 py-3 flex items-center justify-between">
 
                     {/* Logo */}
