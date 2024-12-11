@@ -26,7 +26,7 @@ const Services = () => {
     >
       <section id="services">
         <div className="mx-auto max-w-screen-2xl">
-          <div className="max-w-full mx-7 py-20 bg-secondary/50 rounded-3xl">
+          <div className="max-w-full mx-7 py-20">
             <motion.div
               variants={{
                 hidden: {
