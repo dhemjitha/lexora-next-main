@@ -1,5 +1,6 @@
 import "./globals.css";
 import Navigation from "@/components/Navigation";
+import ThemeProvider from "@/components/ui/theme-provider";
 
 export const metadata = {
   title: "Synolux: Building with Bits | Synolux",
@@ -8,7 +9,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link
           rel="stylesheet"
@@ -16,8 +17,15 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="antialiased">
+      <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
         <Navigation />
         {children}
+        </ThemeProvider>
       </body>
     </html>
   );
