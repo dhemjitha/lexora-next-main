@@ -28,7 +28,7 @@ const FAQS = () => {
             </div>
             <Accordion type="single" collapsible className="text-black">
               <AccordionItem value="item-1">
-                <AccordionTrigger className="underline decoration-white hover:decoration-white">
+                <AccordionTrigger className="hover:no-underline">
                   What services do you offer?
                 </AccordionTrigger>
                 <AccordionContent>
@@ -36,7 +36,7 @@ const FAQS = () => {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
-                <AccordionTrigger className="underline decoration-white hover:decoration-white">
+                <AccordionTrigger className="hover:no-underline">
                   How long is the development process?
                 </AccordionTrigger>
                 <AccordionContent>
@@ -45,7 +45,7 @@ const FAQS = () => {
               </AccordionItem>
 
               <AccordionItem value="item-3">
-              <AccordionTrigger className="underline decoration-white hover:decoration-white">
+              <AccordionTrigger className="hover:no-underline">
                 What is your pricing structure?
               </AccordionTrigger>
               <AccordionContent>
@@ -53,7 +53,7 @@ const FAQS = () => {
               </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
-              <AccordionTrigger className="underline decoration-white hover:decoration-white">
+              <AccordionTrigger className="hover:no-underline">
                 Do you provide maintenance?
               </AccordionTrigger>
               <AccordionContent>
@@ -61,7 +61,7 @@ const FAQS = () => {
               </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-5">
-              <AccordionTrigger className="underline decoration-white hover:decoration-white">
+              <AccordionTrigger className="hover:no-underline">
                 Can you handle integrations?
               </AccordionTrigger>
               <AccordionContent>
