@@ -15,7 +15,7 @@ export const projects = [
   {
     icon: (
       <div className="bg-blue-50 p-4 rounded-full">
-        <PiCode className="w-8 h-8 text-blue-600" />
+        <PiCode className="w-8 h-8 text-black" />
       </div>
     ),
     title: "Custom Software Development",
@@ -25,7 +25,7 @@ export const projects = [
   {
     icon: (
       <div className="bg-blue-50 p-4 rounded-full">
-        <FaMobile className="w-8 h-8 text-blue-600" />
+        <FaMobile className="w-8 h-8 text-black" />
       </div>
     ),
     title: "Mobile App Development",
@@ -35,7 +35,7 @@ export const projects = [
   {
     icon: (
       <div className="bg-blue-50 p-4 rounded-full">
-        <PiCloud className="w-8 h-8 text-blue-600" />
+        <PiCloud className="w-8 h-8 text-black" />
       </div>
     ),
     title: "Cloud Solutions",
@@ -45,7 +45,7 @@ export const projects = [
   {
     icon: (
       <div className="bg-blue-50 p-4 rounded-full">
-        <PiShieldCheck className="w-8 h-8 text-blue-600" />
+        <PiShieldCheck className="w-8 h-8 text-black" />
       </div>
     ),
     title: "Cybersecurity",
@@ -55,7 +55,7 @@ export const projects = [
   {
     icon: (
       <div className="bg-blue-50 p-4 rounded-full">
-        <PiChartBar className="w-8 h-8 text-blue-600" />
+        <PiChartBar className="w-8 h-8 text-black" />
       </div>
     ),
     title: "Data Analytics",
@@ -65,7 +65,7 @@ export const projects = [
   {
     icon: (
       <div className="bg-blue-50 p-4 rounded-full">
-        <AiFillRobot className="w-8 h-8 text-blue-600" />
+        <AiFillRobot className="w-8 h-8 text-black" />
       </div>
     ),
     title: "AI-Powered Solutions",
