@@ -20,7 +20,7 @@ const Services = () => {
       }}
       initial="hidden"
       whileInView="visible"
-      transition={{ duration: 0.8, delay: 0.4 }}
+      transition={{ duration: 0.3, delay: 0.4 }}
       viewport={{ once: true }}
       className="animate_top"
     >
@@ -41,7 +41,7 @@ const Services = () => {
               }}
               initial="hidden"
               whileInView="visible"
-              transition={{ duration: 0.8, delay: 0.4 }}
+              transition={{ duration: 0.4, delay: 0.5 }}
               viewport={{ once: true }}
               className="animate_top"
             >
@@ -73,7 +73,7 @@ const Services = () => {
               }}
               initial="hidden"
               whileInView="visible"
-              transition={{ duration: 0.8, delay: 0.4 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
               viewport={{ once: true }}
               className="animate_top"
             >
