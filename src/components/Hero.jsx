@@ -6,6 +6,10 @@ import { useGSAP } from '@gsap/react';
 import { TransitionContext } from "./shared/TransitionContext";
 import gsap from "gsap";
 
+import { useEffect, useState } from "react";
+import { useTheme } from "next-themes";
+import Particles from "./ui/particles";
+
 function Hero() {
   const scrollToAchievements = () => {
     const achievementsSection = document.getElementById("achievements");
@@ -31,6 +35,13 @@ function Hero() {
       timeline.add(gsap.to(container.current, { opacity: 0 }));
     }
   }, { scope: container });
+
+  const { resolvedTheme } = useTheme();
+  const [color, setColor] = useState("#ffffff");
+ 
+  useEffect(() => {
+    setColor(resolvedTheme === "dark" ? "#ffffff" : "#000000");
+  }, [resolvedTheme]);
 
   return (
     <div
@@ -60,6 +71,13 @@ function Hero() {
           </Button>
         </div>
       </div>
+      <Particles
+        className="absolute inset-0"
+        quantity={100}
+        ease={80}
+        color={color}
+        refresh
+      />
     </div>
   );
 }
