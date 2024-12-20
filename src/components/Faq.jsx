@@ -18,7 +18,7 @@ const FAQS = () => {
   return (
     <div className="mx-auto max-w-screen-2xl ">
       <div className={font.className}>
-        <div className="mt-10 md:py-10 bg-[#f6f5f4] rounded-3xl m-7">
+        <div className=" md:py-10 bg-[#f6f5f4] rounded-3xl m-7">
           <div className="p-10 md:p-4 md:px-20">
             <div className="text-3xl md:text-7xl font-bold text-black">
               Have questions?
