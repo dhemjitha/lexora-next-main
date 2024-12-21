@@ -15,7 +15,7 @@ const FeatureShowcase = () => {
         <br /><br />
       <div className="text-center mb-12">
         <h1 className="text-4xl lg:text-5xl font-bold">
-          Achieve More, Together{' '}
+          Achieve More, Together{' '} <br />
           <span className="font-light text-gray-400">Driving Success Through Innovation</span>
         </h1>
       </div>
