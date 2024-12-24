@@ -1,17 +1,19 @@
 'use client';
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 const Achievements = () => {
+  const [isInView, setIsInView] = useState(false);
+  const sectionRef = useRef(null);
+  const counters = useRef([]);
+
   const stats = [
     { value: "99%", label: "Success Rate", sublabel: "in project delivery" },
     { value: "50M+", label: "Revenue Generated", sublabel: "for our clients" },
     { value: "15+", label: "Expert Engineers", sublabel: "in our team" },
     { value: "24/7", label: "Support Available", sublabel: "around the globe" }
   ];
-
-  const counters = useRef([]);
 
   const smoothCountUp = (target, index) => {
     if (target === "24/7") return;
@@ -37,19 +39,33 @@ const Achievements = () => {
   };
 
   useEffect(() => {
-    counters.current.forEach((counter, index) => {
-      if (counter) smoothCountUp(stats[index].value, index);
-    });
-  }, []);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !isInView) {
+          setIsInView(true);
+          counters.current.forEach((counter, index) => {
+            if (counter) smoothCountUp(stats[index].value, index);
+          });
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, [isInView]);
 
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden" ref={sectionRef}>
       <div className="absolute" />
       
       <div className="mx-auto max-w-screen-2xl px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
           className="relative z-10 mb-20"
         >
@@ -67,7 +83,7 @@ const Achievements = () => {
             <motion.div
               key={index}
               initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.2 }}
               className="group relative"
             >
@@ -79,7 +95,7 @@ const Achievements = () => {
                     ref={(el) => (counters.current[index] = el)}
                     className="text-5xl font-bold text-white"
                   >
-                    {stat.value}
+                    {stat.value === "24/7" ? "24/7" : "0"}
                   </span>
                 </div>
                 <div className="mt-4">
