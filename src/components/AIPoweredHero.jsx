@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const AIPoweredHero = () => {
     return (
-        <div className="mx-auto max-w-screen-2xl h-screen">
+        <div className="mx-auto max-w-screen-2xl">
             <div className="relative  text-white overflow-hidden py-4">
                 <div className="container mx-auto px-6 py-20 text-center">
                     <motion.div
