@@ -5,18 +5,19 @@ import { motion } from "framer-motion";
 
 const Achievements = () => {
   const stats = [
-    { value: "98%", label: "Customer Retention Rate" },
-    { value: "10+", label: "Global Partners" },
-    { value: "15+", label: "Successful Deliveries" },
-    { value: "80 Days", label: "Average Project Turnaround" },
+    { value: "99%", label: "Success Rate", sublabel: "in project delivery" },
+    { value: "50M+", label: "Revenue Generated", sublabel: "for our clients" },
+    { value: "15+", label: "Expert Engineers", sublabel: "in our team" },
+    { value: "24/7", label: "Support Available", sublabel: "around the globe" }
   ];
 
   const counters = useRef([]);
 
   const smoothCountUp = (target, index) => {
+    if (target === "24/7") return;
     let startValue = 0;
-    const endValue = parseFloat(target.replace(/\D/g, "")); // Remove non-digit characters
-    const duration = 1500; // 1.5 seconds
+    const endValue = parseFloat(target.replace(/\D/g, ""));
+    const duration = 2000;
     const startTime = performance.now();
 
     const update = (timestamp) => {
@@ -24,15 +25,12 @@ const Achievements = () => {
       const progress = Math.min(timeElapsed / duration, 1);
       const currentValue = startValue + (endValue - startValue) * progress;
 
-      // Ensure the element is not null before updating
       if (counters.current[index]) {
-        counters.current[index].innerText =
-          currentValue.toFixed(0) + target.replace(/\d/g, "");
+        counters.current[index].textContent = 
+          Math.floor(currentValue) + (target.replace(/\d/g, ""));
       }
 
-      if (progress < 1) {
-        requestAnimationFrame(update);
-      }
+      if (progress < 1) requestAnimationFrame(update);
     };
 
     requestAnimationFrame(update);
@@ -40,60 +38,60 @@ const Achievements = () => {
 
   useEffect(() => {
     counters.current.forEach((counter, index) => {
-      if (counter) {
-        const stat = stats[index];
-        smoothCountUp(stat.value, index); // Animate with the full value including symbols
-      }
+      if (counter) smoothCountUp(stats[index].value, index);
     });
   }, []);
 
   return (
-    <motion.div
-      variants={{
-        hidden: {
-          opacity: 0,
-          y: -20,
-        },
-
-        visible: {
-          opacity: 1,
-          y: 0,
-        },
-      }}
-      initial="hidden"
-      whileInView="visible"
-      transition={{ duration: 0.8, delay: 0.4 }}
-      viewport={{ once: true }}
-      className="animate_top"
-    >
-    <div className="mx-auto max-w-screen-2xl" id="achievements">
-      <div className="relative text-white bg-secondary/40 rounded-3xl m-7 px-8 py-48">
-        <div className="text-center mb-12">
-          <p className="text-sm uppercase text-gray-400">Explore Our Milestones</p>
-          <h2 className="text-3xl lg:text-4xl font-bold mt-2">
-            Achievements That Highlight Our Dedication to Innovation
+    <div className="relative overflow-hidden">
+      <div className="absolute" />
+      
+      <div className="mx-auto max-w-screen-2xl px-8">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="relative z-10 mb-20"
+        >
+          <div className="h-0.5 w-12 bg-secondary/80 mb-8" />
+          <h2 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-300 to-gray-500 mb-6">
+            Innovation in Numbers
           </h2>
-          <p className="text-gray-400 mt-4">
-            At <strong>SYNOLUX</strong>, we strive to push boundaries. Our numbers reflect the trust
-            and success we've built with our partners. Join us as we continue this incredible journey.
+          <p className="text-zinc-400 text-lg max-w-xl">
+            Transforming visions into reality through technical excellence and unwavering commitment.
           </p>
-        </div>
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-10">
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
-            <div key={index} className="flex flex-col items-center text-center">
-              <span
-                ref={(el) => (counters.current[index] = el)}
-                className="text-4xl font-bold"
-              >
-                0
-              </span>
-              <span className="text-gray-400 mt-2">{stat.label}</span>
-            </div>
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              className="group relative"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent rounded-xl -rotate-3 scale-95 opacity-0 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300" />
+              
+              <div className="relative cursor-pointer bg-zinc-800/50 backdrop-blur-sm rounded-xl p-8 hover:translate-y-[-4px] transition-all duration-300">
+                <div className="flex items-baseline gap-1">
+                  <span
+                    ref={(el) => (counters.current[index] = el)}
+                    className="text-5xl font-bold text-white"
+                  >
+                    {stat.value}
+                  </span>
+                </div>
+                <div className="mt-4">
+                  <p className="text-gray-300 font-medium">{stat.label}</p>
+                  <p className="text-zinc-500 text-sm mt-1">{stat.sublabel}</p>
+                </div>
+              </div>
+            </motion.div>
           ))}
         </div>
       </div>
     </div>
-    </motion.div>
   );
 };
 

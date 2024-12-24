@@ -13,7 +13,7 @@ export default function Home() {
       <Hero/>
       <MarqueeComponent/>
       <Achievements/>
-      <ScrollAnimatedText/>
+      {/* <ScrollAnimatedText/> */}
       <FeatureShowcase/>
       <Services/>
       <AIPoweredHero/>
