@@ -18,7 +18,7 @@ const Contact = () => {
                         </div>
 
                         <div className="sm:col-span-2 lg:col-span-7 flex flex-col justify-end text-black">
-                            <p className="text-xl sm:text-2xl text-background sm:text-end">Get in touch</p>
+                            <p className="text-xl sm:text-2xl text-background sm:text-end">Drop Us a Line</p>
                             <div className="text-4xl sm:text-5xl lg:text-6xl font-semibold sm:text-end tracking-tighter">
                                 info@synolux.com
                             </div>
