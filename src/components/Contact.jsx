@@ -7,7 +7,7 @@ const Contact = () => {
     return (
         <div>
             <div className="mx-auto max-w-screen-2xl px-8">
-                <div className="relative z-20 shadow-2xl shadow-background bg-white py-12 sm:py-32 px-6 lg:px-20 rounded-3xl">
+                <div className="relative z-20 shadow-2xl shadow-background bg-white py-12 sm:py-32 px-4 lg:px-20 rounded-3xl">
                     <div className="w-full max-w-screen-2xl mx-auto space-y-12 sm:space-y-0 md:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8">
 
                         <div className="sm:col-span-2 lg:col-span-5">
