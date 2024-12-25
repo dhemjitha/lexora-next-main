@@ -6,6 +6,7 @@ import MarqueeComponent from "@/components/TechnologyMarquee";
 import ScrollAnimatedText from "@/components/Word";
 import Services from "@/components/Services";
 import AIPoweredHero from "@/components/AIPoweredHero";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -17,7 +18,8 @@ export default function Home() {
       <FeatureShowcase/>
       <Services/>
       <AIPoweredHero/>
-      <FAQS/>
+      <Contact/>
+      {/* <FAQS/> */}
     </main>
   );
 }
