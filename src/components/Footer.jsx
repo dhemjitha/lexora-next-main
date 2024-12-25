@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Separator } from './ui/separator';
+import { ConfettiButton } from './ui/confetti';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -97,19 +98,19 @@ const Footer = () => {
                             <p className="text-muted-foreground text-sm mb-4">
                                 Subscribe to our newsletter for the latest updates and news.
                             </p>
-                            <form className="flex flex-col sm:flex-row gap-3 sm:gap-2">
+                            <div className="flex flex-col sm:flex-row gap-3 sm:gap-2">
                                 <Input
                                     type="email"
                                     placeholder="you@domain.com"
                                     className="flex-1 text-white placeholder:text-muted-foreground focustext-sm"
                                 />
-                                <Button 
+                                <ConfettiButton
                                     variant="secondary"
                                     className="w-full sm:w-auto px-4 sm:px-6 bg-white text-black hover:bg-gray-100 text-sm"
                                 >
                                     Subscribe
-                                </Button>
-                            </form>
+                                </ConfettiButton>
+                            </div>
                         </div>
                     </div>
 
