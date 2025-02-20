@@ -19,7 +19,7 @@ const Navigation = () => {
 
                     {/* Logo */}
                     <Link className="flex h-12 w-36 items-center rounded" href="/">
-                        <Image
+                        {/* <Image
                             alt="SYNOLUX Logo"
                             loading="lazy"
                             width="1540"
@@ -27,7 +27,8 @@ const Navigation = () => {
                             decoding="async"
                             srcSet="/assets/logo/logo.png 1x, /assets/logo/logo@2x.png 2x"
                             src="/assets/logo/logo.png"
-                            style="color: transparent;" />
+                            style="color: transparent;" /> */}
+                            <h1 className="text-2xl font-bold">LexoraTech</h1>
                     </Link>
 
                     {/* Navigation Links */}
@@ -48,7 +49,7 @@ const Navigation = () => {
 
                     {/* Button Section */}
                     <div className="flex items-center space-x-2">
-                        <Button variant="outline" className="font-semibold">Let's talk</Button>
+                        <Button variant="outline" className="font-semibold">Let&apos;s talk</Button>
                         <button
                             className="md:hidden text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white focus:outline-none focus:ring-0 focus:ring-gray-600 dark:focus:ring-gray-300"
                             onClick={toggleMenu}

@@ -74,7 +74,7 @@ const AIPoweredHero = () => {
                             viewport={{ once: true }}
                             className="animate_top"
                         >
-                            <ConfettiButton>Let's Move to Work 🎉</ConfettiButton>
+                            <ConfettiButton>Let&apos;s Move to Work 🎉</ConfettiButton>
                         </motion.div>
                     </div>
                 </div>

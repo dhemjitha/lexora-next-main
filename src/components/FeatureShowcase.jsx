@@ -30,7 +30,7 @@ const FeatureShowcase = () => {
 
       <div className="text-center text-gray-400 max-w-2xl mx-auto mb-12">
         <p>
-          At <strong>SYNOLUX</strong>, we are committed to pushing boundaries and redefining possibilities. 
+          At <strong>LexoraTech</strong>, we are committed to pushing boundaries and redefining possibilities. 
           Together with our partners, we deliver transformative solutions that make a lasting impact.
         </p>
         <p className="mt-4">

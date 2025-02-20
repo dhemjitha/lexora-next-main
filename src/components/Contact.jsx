@@ -19,8 +19,8 @@ const Contact = () => {
 
                         <div className="sm:col-span-2 lg:col-span-7 flex flex-col justify-end text-black">
                             <p className="text-xl sm:text-2xl text-background sm:text-end">Drop Us a Line</p>
-                            <div className="text-4xl sm:text-5xl lg:text-6xl font-semibold sm:text-end tracking-tighter">
-                                info@synolux.com
+                            <div className="text-3xl sm:text-3xl lg:text-6xl font-semibold sm:text-end tracking-tighter">
+                                info@lexoratech.com
                             </div>
                             <div className="mt-4 flex justify-center sm:justify-end">
                                 <a
@@ -38,7 +38,7 @@ const Contact = () => {
             <div className="relative mt-10 sm:-mt-2">
                 <div className="bg-blend-screen -mt-12 z-10 absolute h-full  to-transparent from-background/75 w-full"></div>
                 <div style={{ transform: 'translateY(-40.25px) translateZ(0px)' }}>
-                    <Image
+                    {/* <Image
                         alt="xleron Tech"
                         loading="lazy"
                         width="1678"
@@ -47,7 +47,7 @@ const Contact = () => {
                         className="w-full max-w-5xl mx-auto opacity-45 duration-1000"
                         src="/assets/logo/logo.png"
                         style={{ color: 'transparent' }}
-                    />
+                    /> */}
                 </div>
             </div>
         </div>

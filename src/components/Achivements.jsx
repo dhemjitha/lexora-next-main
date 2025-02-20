@@ -1,6 +1,6 @@
-'use client';
+"use client"
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useMemo } from "react";
 import { motion } from "framer-motion";
 
 const Achievements = () => {
@@ -8,12 +8,16 @@ const Achievements = () => {
   const sectionRef = useRef(null);
   const counters = useRef([]);
 
-  const stats = [
-    { value: "99%", label: "Success Rate", sublabel: "in project delivery" },
-    { value: "50M+", label: "Revenue Generated", sublabel: "for our clients" },
-    { value: "15+", label: "Expert Engineers", sublabel: "in our team" },
-    { value: "24/7", label: "Support Available", sublabel: "around the globe" }
-  ];
+  // Memoize the stats array to prevent unnecessary re-renders
+  const stats = useMemo(
+    () => [
+      { value: "99%", label: "Success Rate", sublabel: "in project delivery" },
+      { value: "50M+", label: "Revenue Generated", sublabel: "for our clients" },
+      { value: "15+", label: "Expert Engineers", sublabel: "in our team" },
+      { value: "24/7", label: "Support Available", sublabel: "around the globe" }
+    ],
+    [] // The empty array ensures the stats array is only created once
+  );
 
   const smoothCountUp = (target, index) => {
     if (target === "24/7") return;
@@ -56,7 +60,7 @@ const Achievements = () => {
     }
 
     return () => observer.disconnect();
-  }, [isInView]);
+  }, [isInView, stats]);
 
   return (
     <div className="relative overflow-hidden" ref={sectionRef}>

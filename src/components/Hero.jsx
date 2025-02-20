@@ -8,7 +8,6 @@ import gsap from "gsap";
 
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
-import Particles from "./ui/particles";
 
 function Hero() {
   const scrollToAchievements = () => {
@@ -71,13 +70,6 @@ function Hero() {
           </Button>
         </div>
       </div>
-      <Particles
-        className="absolute inset-0"
-        quantity={100}
-        ease={80}
-        color={color}
-        refresh
-      />
     </div>
   );
 }

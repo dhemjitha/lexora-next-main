@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 function TechnologyMarquee() {
   const technologies = [
@@ -11,8 +12,8 @@ function TechnologyMarquee() {
     { imageUrl: "/assets/techstack/python.png", altText: "Python" },
     { imageUrl: "/assets/techstack/mongodb.png", altText: "MongoDB" },
     { imageUrl: "/assets/techstack/flutter.png", altText: "Flutter" },
-    { imageUrl: "/assets/techstack/laravel.png", altText: "Laravel"},
-    { imageUrl: "/assets/techstack/firebase.png", altText: "Firebase"},
+    { imageUrl: "/assets/techstack/laravel.png", altText: "Laravel" },
+    { imageUrl: "/assets/techstack/firebase.png", altText: "Firebase" },
   ];
 
   return (
@@ -51,7 +52,9 @@ function TechnologyMarquee() {
                 key={index}
                 className="relative w-64 cursor-pointer overflow-hidden rounded-xl p-4"
               >
-                <img
+                <Image
+                  width={technology.width || 144} // Default width if not provided
+                  height={technology.height || 144} // Default height if not provided
                   src={technology.imageUrl}
                   alt={technology.altText}
                   className="opacity-50 hover:opacity-100 duration-300 ease-linear w-36 object-contain"

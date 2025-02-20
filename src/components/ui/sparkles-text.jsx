@@ -45,7 +45,7 @@ const SparklesText = ({
     const interval = setInterval(updateStars, 100);
 
     return () => clearInterval(interval);
-  }, [colors.first, colors.second]);
+  }, [colors.first, colors.second, sparklesCount]);
 
   return (
     (<div

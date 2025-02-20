@@ -6,6 +6,7 @@ import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Separator } from './ui/separator';
 import { ConfettiButton } from './ui/confetti';
+import Link from 'next/link';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -47,8 +48,8 @@ const Footer = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
                         <div>
-                        <a className="flex h-8 mb-4 w-36 items-center rounded" href="/">
-                                <Image
+                        <Link className="flex h-8 mb-4 w-36 items-center rounded" href="/">
+                                {/* <Image
                                     alt="SYNOLUX Logo"
                                     loading="lazy"
                                     width="1540"
@@ -56,21 +57,22 @@ const Footer = () => {
                                     decoding="async"
                                     srcSet="/assets/logo/logo.png 1x, /assets/logo/logo@2x.png 2x"
                                     src="/assets/logo/logo2.png"
-                                    style="color: transparent;" />
-                            </a>
+                                    style="color: transparent;" /> */}
+                                    <h1 className="text-2xl font-bold">LexoraTech</h1>
+                            </Link>
                             <p className="text-muted-foreground mb-4">
                                 Building the future of web development, one project at a time.
                             </p>
                             <div className="flex space-x-4">
                                 {footerLinks.social.map((item) => (
-                                    <a
+                                    <Link
                                         key={item.name}
                                         href={item.href}
                                         className="text-muted-foreground hover:text-foreground transition-colors duration-200"
                                     >
                                         <span className="sr-only">{item.name}</span>
                                         <item.icon />
-                                    </a>
+                                    </Link>
                                 ))}
                             </div>
                         </div>
@@ -81,12 +83,12 @@ const Footer = () => {
                             <ul className="space-y-2">
                                 {footerLinks.company.map((item) => (
                                     <li key={item.name}>
-                                        <a
+                                        <Link
                                             href={item.href}
                                             className="text-muted-foreground hover:text-foreground transition-colors duration-200"
                                         >
                                             {item.name}
-                                        </a>
+                                        </Link>
                                     </li>
                                 ))}
                             </ul>
@@ -118,15 +120,15 @@ const Footer = () => {
                     <div className="border-t border-secondary mt-12 pt-8">
                         <div className="flex flex-col md:flex-row justify-between items-center">
                             <p className="text-muted-foreground text-sm">
-                                © {currentYear} SYNOLUX. All rights reserved.
+                                © {currentYear} LexoraTech Pvt Ltd. All rights reserved.
                             </p>
                             <div className="flex space-x-6 mt-4 md:mt-0">
-                                <a href="/privacy" className="text-muted-foreground hover:text-foreground text-sm">
+                                <Link href="/privacy" className="text-muted-foreground hover:text-foreground text-sm">
                                     Privacy Policy
-                                </a>
-                                <a href="/terms" className="text-muted-foreground hover:text-foreground text-sm">
+                                </Link>
+                                <Link href="/terms" className="text-muted-foreground hover:text-foreground text-sm">
                                     Terms of Service
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
