@@ -63,7 +63,7 @@ export const JobListings = () => {
     // Function to handle the "Apply Now" button click
     const handleApplyClick = (jobTitle) => {
         const subject = `Application for ${jobTitle}`;
-        const email = "career@lexora.com";
+        const email = "career@lexoratech.com";
         const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
         window.location.href = mailtoLink;
     };
