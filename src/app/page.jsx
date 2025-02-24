@@ -6,6 +6,7 @@ import ScrollAnimatedText from "@/components/Word";
 import Services from "@/components/Services";
 import AIPoweredHero from "@/components/AIPoweredHero";
 import Contact from "@/components/Contact";
+import { Testimonials } from "@/components/Testimotionals";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Achievements/>
       <ScrollAnimatedText/>
       <FeatureShowcase/>
+      <Testimonials/>
       <Services/>
       <AIPoweredHero/>
       <Contact/>
