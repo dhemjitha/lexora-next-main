@@ -38,16 +38,16 @@ const Contact = () => {
             <div className="relative mt-10 sm:-mt-2">
                 <div className="bg-blend-screen -mt-12 z-10 absolute h-full  to-transparent from-background/75 w-full"></div>
                 <div style={{ transform: 'translateY(-40.25px) translateZ(0px)' }}>
-                    {/* <Image
+                    <Image
                         alt="xleron Tech"
                         loading="lazy"
                         width="1678"
                         height="483"
                         decoding="async"
                         className="w-full max-w-5xl mx-auto opacity-45 duration-1000"
-                        src="/assets/logo/logo.png"
+                        src="/assets/logo/SVG/logo.svg"
                         style={{ color: 'transparent' }}
-                    /> */}
+                    />
                 </div>
             </div>
         </div>
