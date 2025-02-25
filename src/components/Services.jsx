@@ -25,7 +25,7 @@ const Services = () => {
       className="animate_top"
     >
       <section id="services">
-        <div className="mx-auto max-w-screen-2xl">
+        <div className="flex flex-col items-center justify-center">
           <div className="max-w-full mx-7 py-20">
             <motion.div
               variants={{
