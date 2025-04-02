@@ -57,7 +57,6 @@ const Footer = () => {
                                     decoding="async"
                                     src="/assets/logo/SVG/logo.svg"
                                     style="color: transparent;" />
-                                    {/* <h1 className="text-2xl font-bold">LexoraTech</h1> */}
                             </Link>
                             <p className="text-muted-foreground mb-4">
                                 Building the future of web development, one project at a time.
