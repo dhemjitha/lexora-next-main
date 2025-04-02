@@ -73,7 +73,7 @@ const ReviewCard = ({ img, name, username, body }) => {
 export function Testimonials() {
     return (
         <div className="mx-auto max-w-screen-2xl px-8">
-            <h1 className="text-center text-3xl font-bold">Cusotmer Testimonials</h1><br />
+            <h1 className="text-center text-3xl font-bold">Customer Testimonials</h1><br />
             <p className="text-center text-gray-500">Hear from our valued customers who have experienced the benefits of our services.</p><br />
             <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
                 {/* <Marquee pauseOnHover className="[--duration:20s]">
