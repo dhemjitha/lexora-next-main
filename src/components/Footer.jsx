@@ -49,16 +49,15 @@ const Footer = () => {
 
                         <div>
                         <Link className="flex h-8 mb-4 w-36 items-center rounded" href="/">
-                                {/* <Image
+                                <Image
                                     alt="SYNOLUX Logo"
                                     loading="lazy"
                                     width="1540"
                                     height="322"
                                     decoding="async"
-                                    srcSet="/assets/logo/logo.png 1x, /assets/logo/logo@2x.png 2x"
-                                    src="/assets/logo/logo2.png"
-                                    style="color: transparent;" /> */}
-                                    <h1 className="text-2xl font-bold">LexoraTech</h1>
+                                    src="/assets/logo/SVG/logo.svg"
+                                    style="color: transparent;" />
+                                    {/* <h1 className="text-2xl font-bold">LexoraTech</h1> */}
                             </Link>
                             <p className="text-muted-foreground mb-4">
                                 Building the future of web development, one project at a time.
